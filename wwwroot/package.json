@@ -1,0 +1,17 @@
+{
+  "name": "jessie_t6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "swiper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/all.scss:css/all.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}
+
+
