@@ -2,10 +2,10 @@
 {
     public class ContactUs
     {
-        internal string company { get; set; }
-        internal string name { get; set; }
-        internal string email { get; set; }
-        internal string phone { get; set; }
-        internal string content { get; set; }
+        public string company { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
+        public string phone { get; set; }
+        public string content { get; set; }
     }
 }
