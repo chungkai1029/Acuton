@@ -1,0 +1,66 @@
+@use "../base" as *;
+
+// ---footer---
+footer {
+  margin-top: 50px;
+}
+
+.footer_box {
+  background: $bg_paper;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  @include breakpoint($md) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+// 20230528 add
+
+footer a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.5rem;
+  padding: 5px;
+  font-size: 16px;
+}
+footer a:hover {
+  color: #85b4c3;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.cooperate_logo {
+  display: flex;
+}
+
+.cooperate_logo img {
+  object-fit: contain;
+  width: 100%;
+  align-items: center;
+  /* justify-items: center; */
+}
+.cooperate_logo a {
+  // font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  background-color: #e8e8e8;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: auto;
+  border-radius: 25px;
+}
+.cooperate_logo a:hover {
+  background-color: #85b4c3;
+  color: #fff;
+}
+
+.card_service .card_service_item_img {
+  width: 100px;
+}

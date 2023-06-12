@@ -395,3 +395,32 @@ main {
 }
 
 /*# sourceMappingURL=all.css.map */
+
+/* ======= */
+
+.page_title {
+  margin: 10px 0 15px 0;
+  /* font-size: 25px; */
+  /* color: ; */
+}
+
+.items_title {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  color: #709aa7;
+}
+
+table td {
+  word-break: break-all;
+}
+
+.performace_fmcs {
+  border: 2px solid aquamarine;
+}
+
+.performace_cim {
+  border: 2px solid beige;
+}
+.performace_aoi {
+  border: 2px solid peru;
+}

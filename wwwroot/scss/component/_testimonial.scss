@@ -1,0 +1,26 @@
+@use "../base" as *;
+
+// <!-- TESTIMONIALS -->
+
+.testimonial_text {
+  padding: 30px 20px 30px 30px;
+  border-radius: 4px;
+  background-color: $gray-2;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 20% 90%, 0 100%);
+  margin-bottom: 10px;
+  max-width: 350px;
+  p {
+    padding-bottom: 40px;
+  }
+}
+.testimonial_person {
+  display: flex;
+  gap: 20px;
+  .people_info {
+    a {
+      text-decoration: none;
+      color: $green;
+      font-weight: 700;
+    }
+  }
+}

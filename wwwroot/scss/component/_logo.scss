@@ -1,0 +1,12 @@
+@use "../base" as *;
+
+.logo {
+  // width: 300px;
+  a {
+    display: inline-block;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

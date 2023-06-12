@@ -1,0 +1,25 @@
+// sass --watch scss/main.scss:css/main.css
+//建議順序：不把元件包在layout裡，這樣比較能控制順序、權重問題。
+//------reset----
+@use "./base/reset";
+//--------venders--------
+@use "./venders/navbar_header_bootstrap";
+@use "./venders/carousel_bootstrap";
+// 輪播圖
+
+//--------component-----------
+
+@use "./component/logo";
+// logo
+@use "./component/card_service";
+// 四張卡片
+@use "./component/form_get_it_touch";
+// 表單
+@use "./component/copy_right";
+//copy_right
+
+//------------layout------------
+@use "./layout/body";
+@use "./layout/footer";
+@use "./layout/header";
+@use "./layout/main";

@@ -1,0 +1,16 @@
+@use "../base" as *;
+
+// --- header ---
+header {
+  background:#fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  outline: 2px solid $gray-3;
+  @include breakpoint($md) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

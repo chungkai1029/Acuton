@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>士群系統科技 Acton INC｜工程實績</title>
+    <link rel="icon" href="../logo/title_logo.png" type="image/x-icon" />
+    <!-- 引入bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/all.css" />
+  </head>
+  <body>
+    <div class="container-lg">
+      <!-- header -->
+      <header>
+        <h1 class="logo">
+          <a href="##"
+            ><img src="../logo/acuton.jpg" alt="士群系統科技 Acton INC"
+          /></a>
+        </h1>
+        <!-- social_media icon -->
+        <!-- <div class="header_contact">
+          <div class="iconlist_social_media">
+            <a href="##"></a>
+            <a href="##"></a>
+            <a href="##"></a>
+            <a href="##"></a>
+            <a href="##"></a>
+          </div>
+          <p class="contact_phone">
+            Call Us Now: <a href="tel:+1-777-784-25-43">+1(777)784-25-43</a>
+          </p>
+        </div> -->
+      </header>
+      <!-- 導覽列與搜尋 -->
+      <div class="navbar_search">
+        <!-- 導覽列 -->
+        <div class="navbar_header">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="navbar_header_list">
+              <!-- 小搜尋框 -->
+              <!-- <form>
+                <div class="search_box">
+                  <input type="search" name="text" placeholder="search" />
+                  <button type="submit" name="submit"></button>
+                </div>
+              </form> -->
+              <!-- 收起來的漢堡  -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <!-- 清單 -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <!-- 首頁 -->
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >首頁</a
+                  >
+                </li>
+                <!-- 關於士群 -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    關於士群
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="./company_profile.html"
+                        >公司簡介</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./company_organization.html"
+                        >公司組織</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./company_servicebase.html"
+                        >服務據點</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- 產品服務  -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="service.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    產品服務
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="./service_plc.html"
+                        >自動控制系統(PLC)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./service_fmcs.html"
+                        >廠務監控系統(FMCS)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./service_cim.html"
+                        >電腦整合製造系統(CIM)</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="./service_aoi.html"
+                        >自動光學檢察系統(AOI)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- 市場應用 -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    市場應用
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="./project_performance.html"
+                        >工程實績
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./customer .html">
+                        主要客戶</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- 聯絡我們 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact_us.html">聯絡我們</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- main -->
+      <main>
+        <!-- 表格 -->
+        <table>
+          <!-- PLC -->
+          <tr>
+            <th>產品</th>
+            <th>系統</th>
+            <th>組成架構</th>
+            <th>開發環境</th>
+            <th>開發始期</th>
+            <th>備註</th>
+          </tr>
+          <tbody style="border: 2px solid yellowgreen">
+            <tr>
+              <th
+                colspan="1"
+                rowspan="23"
+                style="background-color: yellowgreen; text-align: center"
+              >
+                PLC
+              </th>
+              <td>ODF Test Line</td>
+              <td>PLC*1(Melsec Q)Sankyo Robot<br />Proface</td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr style="border: 2px solid yellowgreen">
+              <td>ASCS01 分流機</td>
+              <td>PLC*1(Melsec Q)<br />Proface</td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>2004</td>
+              <td>CMO<br />FAB4</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>CHAN-04,05<br /></td>
+              <td>PLC*1(Melsec Q)<br />Proface<br />JEL Robot</td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>200503</td>
+              <td>CMO<br />LCM</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>CSCR-07<br />Loader/Unloader</td>
+              <td>
+                PLC*1(Melsec Q)<br />Proface<br />JEL Robot<br />MELFA Robot
+              </td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>200507</td>
+              <td>CMO<br />LCM</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>HMI Upgrade</td>
+              <td>GE Quick Panel</td>
+              <td></td>
+              <td>200509</td>
+              <td>HAVI<br />彰化</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>MRT PT-1000,4000,5000</td>
+              <td>PLC 90-30</td>
+              <td>Cimplicity Machine Edition</td>
+              <td>200510</td>
+              <td>Solartech</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>CSRB 取片機<br /></td>
+              <td>PLC*1(Melsec Q)<br />Proface<br /></td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>200609</td>
+              <td>CMO<br />China Ningbo</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>ACOG Chip Bonding Line<br /></td>
+              <td>
+                PLC*6(Melsec Q)<br />Motion cpu*3 <br />Melsec GOT*6<br />Motor*85
+              </td>
+              <td>
+                GX Developer<br />GX Configurator<br />GT Designer 2<br />MT
+                Developer<br />
+              </td>
+              <td>200612</td>
+              <td>
+                CMO<br />LCM<br /><br />
+                Loader<br />Cleaner<br />ACF<br />PreBond<br />MainBond<br />Unloader<br /><br />大型開發案<br />
+              </td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>GMSO重力Mura 檢查分類機<br /></td>
+              <td>PLC*1(Melsec Q)<br />Proface<br />ABB,MELFA Robot<br /></td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>200701</td>
+              <td>CMO<br />FAB5</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>LD/UL of ABVL<br />磨邊機<br /></td>
+              <td>PLC*1(Melsec Q)<br />Proface<br /></td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>200703</td>
+              <td>CMO<br />FAB7</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>
+                Loader,Unloader<br />Pack Unpack<br />雷射刻印機<br />ELLD01<br />CGLD01<br />ELBF01<br />DNUP01<br />PPUP01<br />
+              </td>
+              <td>PLC*5(Melsec Q)<br />Proface<br /></td>
+              <td>GX Developer<br />GX Configurator<br />GP PRO/PB3</td>
+              <td>200706</td>
+              <td>CMEL<br />改善案</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>ULVAC GPCS(TFT 濺鍍機)<br /></td>
+              <td>PLC*1(Omron)<br /></td>
+              <td>CX One</td>
+              <td>200707</td>
+              <td>CMO<br />FAB3<br />改造案<br />日本語</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>Packer<br /></td>
+              <td>PLC*1(Omron)<br /></td>
+              <td>CX One</td>
+              <td>200709</td>
+              <td>AUO<br />FAB3<br />改善案</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>
+                LD/UL/BF of PI<br />
+                Rubbing,LCDP<br />Inspection<br />
+              </td>
+              <td>PLC*1(Melsec Q)<br /></td>
+              <td>GX Developer</td>
+              <td>200803</td>
+              <td>AUO<br />FAB3<br />測機案</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>Packe/Robot Stage</td>
+              <td>PLC*1(Melsec Q)<br /></td>
+              <td>GX Developer</td>
+              <td>200804</td>
+              <td>
+                Hannstar<br />FAB3<br />改造案<br />補正from CCD<br />(Ethernet)
+              </td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>偏光板貼附機<br />polarizer attachment</td>
+              <td>PLC*1(Melsec Q)<br />Motion cpu*1<br />Proface</td>
+              <td>GX Developer<br />MT Developer<br />GP PRO/PB3</td>
+              <td>200806</td>
+              <td>QUNKANG<br />China<br />Shen Zen</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>偏光板貼附機<br />polarizer attachment</td>
+              <td>
+                PLC*1(Melsec Q)<br />Motion cpu*1<br />Proface<br />Motor*30
+              </td>
+              <td>GX Developer<br />MT Developer<br />GP PRO/PB3</td>
+              <td>200808</td>
+              <td>CPT<br />China<br />Fuzhou<br />大型開發案</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>T2 G6 BURR Check</td>
+              <td>PLC*1(Melsec Q)<br />Motion cpu*1<br />Proface</td>
+              <td>GX Developer<br />MT Developer<br />GP Pro-EX</td>
+              <td>2008010</td>
+              <td>Innolux<br />大型開發案</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>ODF AOI</td>
+              <td>PLC*1(Melsec Q)<br />Sankyo Robot<br />Proface</td>
+              <td>GX Developer<br />MT Developer<br />GP Pro-EX</td>
+              <td>2008012</td>
+              <td>Hannstar<br />FAB3</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>PB/ITO Oven</td>
+              <td>PLC*1(Melsec QnU)<br />Sankyo Robot<br />Proface</td>
+              <td>GX Developer<br />GP Pro-EX</td>
+              <td>201003</td>
+              <td>Hannstar<br />FAB3<br />CF擴建</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>3D TV Loader,Unloader</td>
+              <td>PLC*1(Melsec Q)<br />Sankyo Robot<br />Proface</td>
+              <td>GX Developer<br />GP Pro-EX</td>
+              <td>201007</td>
+              <td>AUO<br />L6B</td>
+            </tr>
+
+            <tr style="border: 2px solid yellowgreen">
+              <td>M1_LINE PCP</td>
+              <td>PLC*2(Melsec Q)<br />MELFA Robot<br />Melsec GOT</td>
+              <td>GX Developer<br />MELFA ENG<br />GT Designer 2</td>
+              <td>201007</td>
+              <td>Sintek<br />南科<br />改造案<br />日本語</td>
+            </tr>
+            <tr style="border: 2px solid yellowgreen">
+              <td>Touch Panel Pack Line</td>
+              <td>
+                PLC*1(Melsec Q)<br />Motion cpu*1<br />Proface<br />Motor*100
+              </td>
+              <td>GX Developer<br />MT Developer<br />GP Pro-EX</td>
+              <td>201101</td>
+              <td>CMO Innolux<br />大型開發案</td>
+            </tr>
+          </tbody>
+          <!-- FMCS -->
+          <tbody class="performace_fmcs">
+            <tr>
+              <th
+                colspan="1"
+                rowspan="23"
+                style="background-color: aquamarine; text-align: center"
+              >
+                FMCS
+              </th>
+              <td>ODF(液晶滴入製程) Line</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>CF Inline (Phase1)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>CMO<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>1st Cut(第一切製程)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>PI(配向膜塗佈製程)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>Rubbing(刷磨製程) Inline</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>Spacer High(間隔劑測量製程)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>Cell Gap(間隙測量製程)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>Vernier(量測)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>PD(量測)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>Spacer High(間隔劑測量製程)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>Cell Gap(間隙測量製程)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_fmcs">
+              <td>Vernier(量測)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr>
+              <td>PD(量測)</td>
+              <td>Wondware Intouch</td>
+              <td>2003</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>HVAC空調系統監控</td>
+              <td>GE Cimplicity</td>
+              <td>2004</td>
+              <td>TPC<br />大潭廠</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>導線架電鍍自動化控制系統</td>
+              <td>Wondware Intouch</td>
+              <td>2004</td>
+              <td>JTTC<br />青島</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>地面雷達系統</td>
+              <td>GE Cimplicity 更新</td>
+              <td>2004</td>
+              <td>NSPO<br />台南站</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>Sinter #1,#2,#4</td>
+              <td>Honeywell EPKS</td>
+              <td>2005</td>
+              <td>CSC<br />高雄廠</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>ETL#1, EPL#2監控</td>
+              <td>GE Cimplicity MMI</td>
+              <td>2005</td>
+              <td>Tonyi<br />鋼片一、二廠</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>HVAC空調系統監控</td>
+              <td>GE iFix</td>
+              <td>2005</td>
+              <td>QDI<br />龍潭廠</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>污水處理監控</td>
+              <td>Honeywell EPKS</td>
+              <td>2006</td>
+              <td>鳳山溪處理廠</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>ASU &amp; PACC監控</td>
+              <td>Honeywell EPKS</td>
+              <td>2008</td>
+              <td>CMFC</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>導線架電鍍自動化控制系統</td>
+              <td>Wondware Intouch</td>
+              <td>2008</td>
+              <td>ACTRON</td>
+            </tr>
+
+            <tr class="performace_fmcs">
+              <td>Ecospace 廢水處理監控系統</td>
+              <td>Honeywell EPKS</td>
+              <td>2010</td>
+              <td>香港衡力</td>
+            </tr>
+          </tbody>
+          <!-- CIM -->
+          <tbody class="performace_cim">
+            <tr class="performace_cim">
+              <th
+                colspan="1"
+                rowspan="10"
+                style="background-color: beige; text-align: center"
+              >
+                CIM
+              </th>
+
+              <td>TFT Changer(玻璃基版移載機)</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>2004</td>
+              <td>CMO<br />FAB4</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>LCD AOI(LCD 檢測製程)</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>2004</td>
+              <td>CMO<br />FAB4</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>LCD DRRW(LCD 檢測製程)</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>2004</td>
+              <td>CMO<br />FAB4</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>Changer 04,05(玻璃基版移載機)</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>2005</td>
+              <td>CMO LCM</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>ACOG Chip IC Bonding(IC 邦定機)</td>
+              <td>Visual Basic<br />SQL Server<br />SEMI Protocol:HSMS</td>
+              <td>2006</td>
+              <td>CMO LCM<br />Contrel</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>WU02 (Pack &amp; Unpack) 改善案</td>
+              <td>Visual C++<br />SMS<br />SEMI Protocol:HSMS</td>
+              <td>2007</td>
+              <td>AUO<br />L3D</td>
+            </tr>
+            <tr>
+              <td>ELLD01,CGLD01,ELBF01,DNUP01,PPUP01改善案</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>200706</td>
+              <td>CMEL</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>ULVAC GPCS(TFT 濺鍍機) 改造案</td>
+              <td>Delphi</td>
+              <td>200707</td>
+              <td>CMO<br />FAB3</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>ODF AOI(檢測)</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>2008</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+            <tr class="performace_cim">
+              <td>CF 50K(擴建) PB/ITO Oven</td>
+              <td>Visual Basic<br />Access<br />SEMI Protocol:HSMS</td>
+              <td>2010</td>
+              <td>HannStar<br />FAB3</td>
+            </tr>
+          </tbody>
+          <!-- AOI -->
+          <tbody class="performace_aoi">
+            <th
+              colspan="1"
+              rowspan="4"
+              style="background-color: peru; text-align: center"
+            >
+              AOI
+            </th>
+            <tr class="performace_aoi">
+              <td>偏光板對位<br /></td>
+              <td>MELSEC-Q<br />Omron F500</td>
+              <td>200805</td>
+              <td>CPT</td>
+            </tr>
+            <tr class="performace_aoi">
+              <td>連接器檢測</td>
+              <td>C#</td>
+              <td>200907</td>
+              <td>JTTC</td>
+            </tr>
+            <tr class="performace_aoi">
+              <td>LED晶圓(切割,劈裂)對位</td>
+              <td>C#,C++</td>
+              <td>201004</td>
+              <td>N-TEC</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <section></section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <!-- googlemap、網站導覽、聯絡我們 -->
+        <section class="footer_info">
+          <!-- googlemap -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.110810759534!2d120.30678021085023!3d23.093039079037393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7b0e342c9cd5%3A0x97ebef49bb9e63ea!2z5aOr576k57O757Wx56eR5oqA5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1685258682154!5m2!1szh-TW!2stw"
+              width="100%"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- 聯絡我們與網站導覽 -->
+          <!-- <div class="contact">
+            <div class="web_map">
+              <div class="web_map_service">
+                <p style="color: #fff">產品服務</p>
+                <a href="">自動控制系統(PLC)</a>
+                <a href="">廠務監控系統(FMCS)</a>
+                <a href="">電腦整合製造系統(CIM)</a>
+                <a href="">自動光學檢察系統(AOI)</a>
+              </div>
+
+              <div class="web_map_market">
+                <p style="color: #fff">市場應用</p>
+                <a href="">工程實績</a>
+                <a href="">合作廠商</a>
+              </div>
+
+              <div class="web_map_aboutus">
+                <p style="color: #fff">關於士群</p>
+                <a href="">公司簡介</a>
+                <a href="">公司組織</a>
+                <a href="">服務據點</a>
+              </div>
+            </div>
+          </div> -->
+        </section>
+        <p>總公司 地址：(744-43)台南市新市區大營村131-31號</p>
+        <p>
+          電話：<a href="tel:06-589-1277">06-589-1277</a> 傳真：<a
+            href="tel:06-589-0295"
+            >06-589-0295</a
+          >
+        </p>
+        <p></p>
+
+        <!-- copyright footer_nav -->
+        <div class="copy_right">
+          <div class="copy_right_box">
+            <p class="">
+              &copy; 2023 Acuton INC. All rights reserved.
+              <!-- <a class="" href="##">Privacy Policy</a> -->
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- bootstrapjs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+  </body>
+</html>

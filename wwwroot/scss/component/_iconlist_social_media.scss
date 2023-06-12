@@ -1,0 +1,66 @@
+@use "../base" as *;
+
+// social_media icon
+
+.header_contact {
+  display: none;
+
+  @include breakpoint($md) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  p {
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+.iconlist_social_media {
+  font-size: 0;
+
+  a {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+  }
+  a:nth-child(1) {
+    background: $media_icon no-repeat 0 0;
+    &:hover {
+      background: $media_icon no-repeat 0 -27px;
+    }
+  }
+  a:nth-child(2) {
+    background: $media_icon no-repeat -37px 0;
+    &:hover {
+      background: $media_icon no-repeat -37px -27px;
+    }
+  }
+  a:nth-child(3) {
+    background: $media_icon no-repeat -74px 0;
+    &:hover {
+      background: $media_icon no-repeat -74px -27px;
+    }
+  }
+  a:nth-child(4) {
+    background: $media_icon no-repeat -111px 0;
+    &:hover {
+      background: $media_icon no-repeat -111px -27px;
+    }
+  }
+  a:nth-child(5) {
+    background: $media_icon no-repeat -150px 0;
+    &:hover {
+      background: $media_icon no-repeat -150px -27px;
+    }
+  }
+}
+
+// url(../images/social.png)
+// background: $media_icon no-repeat

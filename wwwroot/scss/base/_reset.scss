@@ -1,0 +1,40 @@
+%mp_reset {
+  margin: 0;
+  padding: 0;
+}
+
+%text_up {
+  text-transform: uppercase;
+}
+
+h1 {
+  @extend %text_up;
+  @extend %mp_reset;
+}
+h2 {
+  @extend %text_up;
+  @extend %mp_reset;
+}
+h3 {
+  @extend %text_up;
+  @extend %mp_reset;
+  margin-bottom: 30px;
+}
+p {
+  @extend %mp_reset;
+}
+ul {
+  @extend %mp_reset;
+}
+li {
+  @extend %mp_reset;
+}
+
+// [note]
+// Mixin與extend的使用時機該如何抉擇？
+// - @mixin是將程式碼帶入到對應的class去，同時可帶入變數。（群組共用樣式）
+// - @extend則是藉由class合併，並吃到共通樣式，但沒辦法帶入變數。（貼上），可改變數）
+// 如果你的樣式都固定不變的，不會需要用參數帶進去改變樣式的話，
+// 那就用@extend，程式碼會比較少些。
+
+// https://ithelp.ithome.com.tw/articles/10128359

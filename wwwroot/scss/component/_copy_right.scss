@@ -1,0 +1,30 @@
+@use "../base" as *;
+
+// <!-- copyright footer_nav -->
+.copy_right {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: $black;
+  padding: 10px 0;
+  @include breakpoint($lg) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.copy_right_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    color: $gray-3;
+    text-align: center;
+    a {
+      color: $green;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

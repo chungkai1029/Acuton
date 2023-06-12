@@ -1,0 +1,21 @@
+@use "../base" as *;
+
+// <!-- FLICKR -->
+
+.gallery_flickr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flickr_box {
+  width: calc((100% - 3 * 10px) / 4);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &:hover {
+    transform: scale(1.5, 1.5);
+  }
+}

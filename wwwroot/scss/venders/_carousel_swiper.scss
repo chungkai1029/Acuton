@@ -1,0 +1,112 @@
+@use "../base" as *;
+
+// <!-- 未來工作圖片輪播 -->
+.carousel_swiper {
+  padding-bottom: 50px;
+
+  .carousel_swiper_box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.swiper_button_prev,
+.swiper_button_next {
+  background-color: transparent;
+  font-size: 30px;
+  color: $gray-3;
+  border: transparent;
+}
+
+//
+// swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  img {
+    width: 100%;
+  }
+}
+
+// 組裝概念：
+// ::before 當背景
+// hover_link 內容物
+// 一起出現
+
+.img_hover {
+  &:hover {
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   background: linear-gradient(
+    //     150deg,
+    //     rgba(0, 0, 0, 0.5) 0 20%,
+    //     rgba(255, 255, 255, 0) 20% 30%,
+    //     rgba(0, 0, 0, 0.5) 30% 80%,
+    //     rgb(110, 180, 0, 1) 82% 80%,
+    //     rgba(255, 255, 255, 0) 80% 100%
+    //   );
+    // }
+  }
+}
+
+.img_hover {
+  position: relative;
+  .cover {
+    position: absolute;
+    transition: top 0.3s;
+  }
+
+  & {
+    .cover {
+      top: 100%;
+    }
+  }
+  &:hover {
+    .cover {
+      top: 0%;
+    }
+  }
+}
+
+.img_hover {
+  .hover_link {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    // transition: top 0.3s;
+    // top: 100%;
+  }
+  .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+      150deg,
+      rgba(0, 0, 0, 0.5) 0 20%,
+      rgba(255, 255, 255, 0) 20% 30%,
+      rgba(0, 0, 0, 0.5) 30% 80%,
+      rgb(110, 180, 0, 1) 82% 80%,
+      rgba(255, 255, 255, 0) 80% 100%
+    );
+  }
+}

@@ -1,0 +1,47 @@
+@use "../base" as *;
+
+// news&event
+
+.card_news_box {
+  & + .card_news_box {
+    margin-top: 20px;
+  }
+  @include breakpoint($sm) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+.card_news_box_img {
+  width: 100%;
+  margin-bottom: 20px;
+  @include breakpoint($sm) {
+    width: 40%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.card_news_box_text {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.date {
+  background: $green;
+  color: $white;
+  width: 120px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px 10px;
+  text-align: center;
+}
+.text {
+  margin-top: 10px;
+  // overflow: hidden;
+  // display: -webkit-box;
+  // -webkit-box-orient: vertical;
+  // -webkit-line-clamp: 6;
+}

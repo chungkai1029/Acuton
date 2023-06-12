@@ -1,0 +1,87 @@
+@use "../base" as *;
+
+// 使用bootstrap元件navbar+部分修改與增加搜尋框
+
+//navbar_header+ search
+
+.navbar_search {
+  margin-top: 20px;
+  @include breakpoint($md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navbar_header {
+  @include breakpoint($md) {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+}
+
+.navbar {
+  flex-wrap: wrap;
+}
+
+.navbar_header_list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 200%;
+
+  // <!-- 小搜尋框  收起來的時候-->
+  form {
+    display: flex;
+    padding: 10px;
+    width: 85%;
+
+    .search_box {
+      outline: 1px solid $gray-2;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: $gray-1;
+      padding: 5px 10px;
+    }
+    input {
+      background-color: $gray-1;
+      border: none;
+      width: 100%;
+    }
+    button {
+      background: url(../images/search.png) no-repeat 0 5px;
+      background-color: $gray-1;
+      border: none;
+      width: 5%;
+    }
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  padding: 0;
+  .navbar-collapse {
+    .nav-item,
+    .dropdown-item {
+      @include breakpoint($md) {
+        outline: 1px solid $gray-1;
+      }
+      a {
+        padding: 16px 18px;
+        &:hover {
+          background-color: $green;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.dropdown {
+  .dropdown-menu {
+    padding: 0;
+  }
+}
