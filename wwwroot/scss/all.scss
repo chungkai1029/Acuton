@@ -43,6 +43,7 @@
 .table_box{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 table{
   text-align: center;
@@ -50,38 +51,52 @@ table{
 table td {
   word-break: break-all;  
 }
+.go_to_top{
+  font-size: 30px;
+  font-weight: 700;
+color: #4f8b9d;
+text-align: center;
+text-decoration: none;
+margin: 10px;
+
+}
+
 
 .performace_top{
-  border: 2px solid yellowgreen;
-  background-color: rgb(225, 246, 196);
+  border: 2px solid #90bcc9;
+  background-color: #4f8b9d;
+  color: #fff;
 }
 
 
 .performace_plc{
-  background-color: yellowgreen;
+  background-color: #4f8b9d;
+  color: #fff;
 }
 .performace_plc_line{
-  border: 2px solid yellowgreen;
+  border: 2px solid #709aa7;
 }
-
 .performace_fmcs{
-  background-color: rgb(225, 246, 196);
+  border: 2px solid #709aa7;
+  background-color: #fff
 }
 .performace_fmcs_line {
-  border: 2px solid rgb(225, 246, 196);
+  border: 2px solid #709aa7;
 }
 
 .performace_cim {
-  background-color: yellowgreen;
+  background-color: #4f8b9d;
+  color: #fff;
 }
 .performace_cim_line {
-  border: 2px solid yellowgreen;
+  border: 2px solid #709aa7;
 }
 .performace_aoi {
-  background-color: rgb(225, 246, 196);
+  border: 2px solid #709aa7;
+  background-color: #fff;
 }
 .performace_aoi_line {
-  border: 2px solid rgb(225, 246, 196);
+  border: 2px solid #709aa7;
 }
 
 
