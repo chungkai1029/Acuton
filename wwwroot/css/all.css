@@ -424,3 +424,13 @@ table td {
 .performace_aoi {
   border: 2px solid peru;
 }
+
+.nav-item .nav-link :focus {
+  background-color: #95b285;
+  color: #39691d;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #5c5c5c;
+  color: #fff;
+}
