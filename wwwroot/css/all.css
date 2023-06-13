@@ -1,16 +1,9 @@
-li,
-ul,
-p,
-h3,
-h2,
-h1 {
+li, ul, p, h3, h2, h1 {
   margin: 0;
   padding: 0;
 }
 
-h3,
-h2,
-h1 {
+h3, h2, h1 {
   text-transform: uppercase;
 }
 
@@ -31,7 +24,6 @@ h3 {
 @media (min-width: 768px) {
   .navbar_header {
     flex-grow: 1;
-    margin-right: 10px;
   }
 }
 
@@ -349,8 +341,7 @@ footer p {
 }
 
 header {
-  /* background: url(../images/subbg.gif); */
-  background-color: #fff;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,8 +357,8 @@ header {
 }
 
 main {
-  background: url(../images/subbg.gif);
-  outline: 2px solid #cdcdcd;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .company {
@@ -394,10 +385,7 @@ main {
   object-fit: cover;
 }
 
-/*# sourceMappingURL=all.css.map */
-
-/* ======= */
-
+/* =======  */
 .page_title {
   margin: 10px 0 15px 0;
   /* font-size: 25px; */
@@ -410,19 +398,54 @@ main {
   color: #709aa7;
 }
 
+.table_box {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  text-align: center;
+}
+
 table td {
   word-break: break-all;
 }
 
+.performace_top {
+  border: 2px solid yellowgreen;
+  background-color: rgb(225, 246, 196);
+}
+
+.performace_plc {
+  background-color: yellowgreen;
+}
+
+.performace_plc_line {
+  border: 2px solid yellowgreen;
+}
+
 .performace_fmcs {
-  border: 2px solid aquamarine;
+  background-color: rgb(225, 246, 196);
+}
+
+.performace_fmcs_line {
+  border: 2px solid rgb(225, 246, 196);
 }
 
 .performace_cim {
-  border: 2px solid beige;
+  background-color: yellowgreen;
 }
+
+.performace_cim_line {
+  border: 2px solid yellowgreen;
+}
+
 .performace_aoi {
-  border: 2px solid peru;
+  background-color: rgb(225, 246, 196);
+}
+
+.performace_aoi_line {
+  border: 2px solid rgb(225, 246, 196);
 }
 
 .nav-item .nav-link :focus {
@@ -434,3 +457,5 @@ table td {
   background-color: #5c5c5c;
   color: #fff;
 }
+
+/*# sourceMappingURL=all.css.map */

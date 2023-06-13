@@ -23,3 +23,75 @@
 @use "./layout/footer";
 @use "./layout/header";
 @use "./layout/main";
+
+/* =======  */
+
+.page_title {
+  margin: 10px 0 15px 0;
+  /* font-size: 25px; */
+  /* color: ; */
+}
+
+.items_title {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  color: #709aa7;
+}
+
+
+// 表格樣式
+.table_box{
+  display: flex;
+  justify-content: center;
+}
+table{
+  text-align: center;
+}
+table td {
+  word-break: break-all;  
+}
+
+.performace_top{
+  border: 2px solid yellowgreen;
+  background-color: rgb(225, 246, 196);
+}
+
+
+.performace_plc{
+  background-color: yellowgreen;
+}
+.performace_plc_line{
+  border: 2px solid yellowgreen;
+}
+
+.performace_fmcs{
+  background-color: rgb(225, 246, 196);
+}
+.performace_fmcs_line {
+  border: 2px solid rgb(225, 246, 196);
+}
+
+.performace_cim {
+  background-color: yellowgreen;
+}
+.performace_cim_line {
+  border: 2px solid yellowgreen;
+}
+.performace_aoi {
+  background-color: rgb(225, 246, 196);
+}
+.performace_aoi_line {
+  border: 2px solid rgb(225, 246, 196);
+}
+
+
+// navbar樣式
+.nav-item .nav-link :focus {
+  background-color: #95b285;
+  color: #39691d;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #5c5c5c;
+  color: #fff;
+}

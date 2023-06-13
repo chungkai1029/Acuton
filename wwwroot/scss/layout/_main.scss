@@ -2,13 +2,17 @@
 
 // ----main----
 main {
-  background: $bg_paper;
-  outline: 2px solid $gray-3;
+  // background: $bg_paper;
+  margin-top: 20px;
+  padding: 20px;
+
+  // outline: 2px solid $gray-3;
 }
 
 //區塊分割線
 .company {
   border-bottom: 1px solid $gray-3;
+  
 }
 
 //more

@@ -15,7 +15,7 @@
 .navbar_header {
   @include breakpoint($md) {
     flex-grow: 1;
-    margin-right: 10px;
+    
   }
 }
 
