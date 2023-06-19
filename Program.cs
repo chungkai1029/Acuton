@@ -12,7 +12,12 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-app.UseDefaultFiles();
+// Redirect default file path to the html folder inside the wwwroot.
+var options = new DefaultFilesOptions();
+options.DefaultFileNames.Clear();
+options.DefaultFileNames.Add("/html/index.html");
+
+app.UseDefaultFiles(options);
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
