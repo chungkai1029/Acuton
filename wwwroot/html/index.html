@@ -374,11 +374,11 @@
             </p>
           </div>
 
-          <form class="get_it_touch col-12 col-md-6">
+          <form class="get_it_touch col-12 col-md-6" method="POST">
             <h3>聯絡我們</h3>
             <input
               type="text"
-              name="name"
+              name="company"
               placeholder="公司 Company"
               required="required"
             />
@@ -391,23 +391,23 @@
             <input
               type="email"
               name="email"
-              placeholder="電子信箱 E-mail "
+              placeholder="電子信箱 E-mail"
               required="required"
             />
             <input
               type="tel"
               name="phone"
-              placeholder="聯絡電話 Phone "
+              placeholder="聯絡電話 Phone"
               required
             />
             <textarea
               name="content"
-              placeholder="Message"
+              placeholder="訊息內容 Message"
               required="required"
             ></textarea>
             <div>
               <button class="button_reset" type="reset">清除 Clear</button>
-              <button class="button_send" type="submit">傳送 Send</button>
+              <button class="button_send" type="submit" formaction="contact_us">傳送 Send</button>
             </div>
           </form>
         </section>

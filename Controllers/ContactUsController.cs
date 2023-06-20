@@ -18,7 +18,7 @@ namespace Acuton.Controllers
         {
             Console.WriteLine("Recieve from form submit");
 
-            if(System.IO.File.Exists(configFile))
+            if (System.IO.File.Exists(configFile))
             {
                 using (FileStream fs = System.IO.File.OpenRead(configFile))
                 {
@@ -27,7 +27,11 @@ namespace Acuton.Controllers
 
                     // Change the json with data from form submit
                     mailServer.subject = "Customer Service";
-                    mailServer.content = $"公司:{contactUs.company}<br>姓名:{contactUs.name}<br>電子信箱:{contactUs.email}<br>聯絡電話:{contactUs.phone}<br>內容:{contactUs.content}";
+                    mailServer.contactUs.company = contactUs.company;
+                    mailServer.contactUs.name = contactUs.name;
+                    mailServer.contactUs.email = contactUs.email;
+                    mailServer.contactUs.phone = contactUs.phone;
+                    mailServer.contactUs.content = contactUs.content;
 
                     // Serialize new json string from form submit
                     JsonSerializerOptions options = new JsonSerializerOptions { WriteIndented = true };
