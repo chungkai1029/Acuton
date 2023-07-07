@@ -228,11 +228,11 @@
                 <p>地址：(407-63)台中市西屯區國安一路210巷15號6樓-5</p>
               </div>
             </div>
-            <form class="get_it_touch col-12 col-md-6">
+            <form class="get_it_touch col-12 col-md-6" method="POST">
               <h3>聯絡我們</h3>
               <input
                 type="text"
-                name="name"
+                name="company"
                 placeholder="公司 Company"
                 required="required"
               />
@@ -256,12 +256,12 @@
               />
               <textarea
                 name="content"
-                placeholder="Message"
+                placeholder="訊息內容 Message"
                 required="required"
               ></textarea>
               <div>
                 <button class="button_reset" type="reset">清除 Clear</button>
-                <button class="button_send" type="submit">傳送 Send</button>
+                <button class="button_send" type="submit" formaction="contact_us">傳送 Send</button>
               </div>
             </form>
           </div>

@@ -1,4 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+// Redirect web root path to the html folder inside the wwwroot.
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    WebRootPath = "wwwroot/html"
+});
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -12,12 +17,7 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
-// Redirect default file path to the html folder inside the wwwroot.
-var options = new DefaultFilesOptions();
-options.DefaultFileNames.Clear();
-options.DefaultFileNames.Add("/html/index.html");
-
-app.UseDefaultFiles(options);
+app.UseDefaultFiles();
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
