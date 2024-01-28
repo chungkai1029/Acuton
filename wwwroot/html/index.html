@@ -375,6 +375,7 @@
           </div>
 
           <form
+            id="form_of_homepage"
             class="get_it_touch col-12 col-md-6"
             method="POST"
             target="nm_iframe"
@@ -411,7 +412,12 @@
             ></textarea>
             <div>
               <button class="button_reset" type="reset">清除 Clear</button>
-              <button class="button_send" type="submit" formaction="contact_us">
+              <button
+                class="button_send"
+                type="submit"
+                formaction="contact_us"
+                onclick="clearForm()"
+              >
                 傳送 Send
               </button>
             </div>
@@ -480,6 +486,7 @@
         </div>
       </footer>
     </div>
+    <script src="../js/index.js"></script>
     <!-- bootstrapjs -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
